@@ -1,0 +1,86 @@
+<script>
+    // var x=10
+    // //x++
+    // console.log(x++);
+    // console.log(x);
+    // console.log(++x);
+    // console.log(x++ + ++x);
+
+    // limit= prompt("Enter your number: ");
+    // for(let i=1;i<=limit;i++){
+    //     console.log(i);
+    // }
+
+    // for(i=1;i<10;i++){
+        
+    // };
+    // console.log(i);
+
+    // num=prompt("Enter your number: ");
+    // console.log("Table of " + num);
+    // for(i=1,j=10;i<=10;i++,j--){
+    //     console.log(`${num} * ${i} = ${num*i}    ${num}*${j} = ${num*j}`);
+    //     //console.log(`5*1=5   5*10=50`);
+    // }
+
+    let jackpot = Math.floor(Math.random() * 101);
+    console.log(jackpot);
+    var k=10;
+    for (let i = 1; i <= 10; i++) {
+     var guess =prompt(`Enter your guess ${i}: `);
+        if (jackpot == guess) {
+            alert(`You guessed it right. jackpot is ${jackpot}. ypu won 7 crore rupees.`);
+            break;
+        }
+        else if(jackpot!=guess && i==10){
+            alert(`You lost the game. jackpot is ${jackpot}`);
+        }
+
+        if(jackpot<25)
+        {
+            alert(`Jackpot is less than 25`)
+        }
+        else if(jackpot>25 && jackpot<50)
+        {
+            alert(`Jackpot is greater than 25 and less than 50`)
+        }
+        else if(jackpot>50 && jackpot<75)
+        {
+            alert(`Jackpot is greater than 50 and less than 75`)
+        }
+        else
+        {
+            alert(`Jackpot is greater than 75`)
+        }
+
+        if (guess < jackpot) {
+        alert(`try a bigger number`)
+        } 
+        else {
+        alert(`try a smaller number`)
+
+        var difference = Math.abs(jackpot - guess);
+
+        if (difference <= 5) {
+        alert(`jackpot number is closer within 5 range`)
+        } 
+        else if (difference <= 10) {
+            closeness = "jackpot number is closer with in 10 range";
+        } 
+        else if (difference <= 20) {
+            closeness = "jackpot number is closer with in 20 range";
+        } 
+
+        
+    }
+
+    }
+
+    
+    //prompt("Enter your number: ");
+
+
+    
+
+
+</script>
